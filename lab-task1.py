@@ -15,21 +15,26 @@ while True:
     if operation == 1:
        add = input("enter task that you want to add: ")
        tasks.append(add)
-       print(t)
+       print("Task Added: ")
+       for t in tasks:
+           print(t)
 
     elif operation == 2:
         previous_task = input("Enter the task name you want to update: ")
         if previous_task in tasks:
             updated_task = input("Enter new task: ")
             task_index = tasks.index(previous_task)  
-            tasks[task_index] = updated_task        
-            print(t)
+            tasks[task_index] = updated_task  
+            print("Task Updated: ")      
+            for t in tasks:
+               print(t)
     elif operation == 3:
         task_to_remove = input("Enter the task name you want to remove: ")
         if task_to_remove in tasks:
             tasks.remove(task_to_remove)  
-           
-            print(t)
+            print("Task Removed: ")
+            for t in tasks:
+                print(t)
     elif operation == 4:
         print("list is closed")
         break
