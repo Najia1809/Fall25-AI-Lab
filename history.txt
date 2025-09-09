@@ -1,0 +1,5 @@
+
+Living Room,20,turn off heater
+Kitchen,34,turn on heater
+Living Room,20,turn off heater
+Drawing Room,26,turn on heater
